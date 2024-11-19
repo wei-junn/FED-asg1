@@ -60,7 +60,7 @@ As a frequent user, I want to quickly arrange the usual service, so that I can g
 easily and conveniently.
 
 Features
-- Navigation bar that changes colour on hover
+- Navigation bar that changes colour on hover (completed)
 - Video in background on homepage
 - Outline the services provided
 - Include fictional track record and achievements
@@ -70,7 +70,7 @@ Features
 - Pop-up when users successfully submit form
 
 Existing Features
-- 
+- responsive navigation bar that has animation on hover
 
 Additional features to be implemented in the future:
 - Products page for bike accessories 
