@@ -61,7 +61,7 @@ easily and conveniently.
 
 Features
 - Navigation bar that changes colour on hover (completed)
-- Video in background on homepage
+- Video in background on homepage (completed)
 - Outline the services provided
 - Include fictional track record and achievements
 - Include pictures in a flexbox 
@@ -71,6 +71,7 @@ Features
 
 Existing Features
 - responsive navigation bar that has animation on hover
+- video in background on homepage
 
 Additional features to be implemented in the future:
 - Products page for bike accessories 
@@ -88,4 +89,8 @@ Testing User-Stories:
 -
 
 Credits:
--
+video background - https://www.pexels.com/search/videos/cycling/
+
+inspirations:
+navigation bar - https://www.bikesmith.sg/
+home page layout - https://www.bikeguru.sg/home-based-bicycle-shops-and-their-products-and-services/
