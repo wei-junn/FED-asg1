@@ -64,7 +64,8 @@ Features
 - Video in background on homepage (completed)
 - Outline the services provided
 - Include fictional track record and achievements
-- Include pictures in a flexbox 
+- Showcase pictures of clients/events/stores (completed)
+- Include pictures in a flexbox (completed)
 - Provide information and contact information for customers.
 - Error handling for form
 - Pop-up when users successfully submit form
@@ -72,6 +73,8 @@ Features
 Existing Features
 - responsive navigation bar that has animation on hover
 - video in background on homepage
+- Showcase pictures of clients/events/stores
+- Include pictures in a flexbox 
 
 Additional features to be implemented in the future:
 - Products page for bike accessories 
@@ -94,3 +97,18 @@ video background - https://www.pexels.com/search/videos/cycling/
 inspirations:
 navigation bar - https://www.bikesmith.sg/
 home page layout - https://www.bikeguru.sg/home-based-bicycle-shops-and-their-products-and-services/
+
+Images:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cheekiemonkie.net%2F2019%2F11%2Feast-coast-park-cyclist-park-singapore.html&psig=AOvVaw3k0dNS8R_x1eTtWqq-h524&ust=1732196213620000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDxpvKD64kDFQAAAAAdAAAAABAZ
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fsportsincycling.com%2Fblog%2Fsingapore-national-individual-time-trial-highlights%2F&psig=AOvVaw3pz61o8PRC9gj-pAMvwDbT&ust=1732195730002000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiwzaCJ64kDFQAAAAAdAAAAABAE
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fshop.sportsbasement.com%2Fpages%2Fservices-bike&psig=AOvVaw2k8y7rvC6iMo-tWq_BBmSC&ust=1732195631070000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNiL5LOJ64kDFQAAAAAdAAAAABAE
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.happyowlcycle.com.sg%2Fservices-1%2Fbike-servicing&psig=AOvVaw0in_QPuiaiImOKh9R0hE6o&ust=1732197731768000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCSnsCJ64kDFQAAAAAdAAAAABAE
+
+https://www.activesgcircle.gov.sg/hs-fs/hubfs/283282529_3138625339688249_6543502948907637557_n.jpg?width=1440&height=985&name=283282529_3138625339688249_6543502948907637557_n.jpg
+
+https://i.ytimg.com/vi/0QO2zMv_U8w/maxresdefault.jpg
+
+https://i0.wp.com/deployant.com/wp-content/uploads/2023/10/TUDOR-RIDE-WITH-THE-PROS_6.jpg?fit=1200%2C800&ssl=1
