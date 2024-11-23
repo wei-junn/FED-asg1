@@ -68,8 +68,8 @@ Features
 - Include pictures in a flexbox (completed)
 - Create a filter for the images in gallery (completed)
 - Provide information and contact information for customers.
-- Error handling for form
-- Pop-up when users successfully submit form
+- Error handling for form (completed)
+- Pop-up when users successfully submit form (completed)
 
 Existing Features
 - responsive navigation bar that has animation on hover
@@ -77,6 +77,8 @@ Existing Features
 - Showcase pictures of clients/events/stores
 - Include pictures in a flexbox 
 - Create a filter for the images in gallery 
+- Error handling for form
+- Pop-up when users successfully submit form 
 
 Additional features to be implemented in the future:
 - Products page for bike accessories 
