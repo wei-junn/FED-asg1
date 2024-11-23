@@ -132,6 +132,28 @@ main h2 {
     margin-bottom: 20px;
 }
 
+/* Filters Section */
+.filters {
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
