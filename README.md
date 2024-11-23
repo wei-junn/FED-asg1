@@ -63,9 +63,10 @@ Features
 - Navigation bar that changes colour on hover (completed)
 - Video in background on homepage (completed)
 - Outline the services provided
-- Include fictional track record and achievements
+- Include fictional track record and achievements 
 - Showcase pictures of clients/events/stores (completed)
 - Include pictures in a flexbox (completed)
+- Create a filter for the images in gallery (completed)
 - Provide information and contact information for customers.
 - Error handling for form
 - Pop-up when users successfully submit form
@@ -75,6 +76,7 @@ Existing Features
 - video in background on homepage
 - Showcase pictures of clients/events/stores
 - Include pictures in a flexbox 
+- Create a filter for the images in gallery 
 
 Additional features to be implemented in the future:
 - Products page for bike accessories 
