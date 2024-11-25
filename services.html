@@ -39,69 +39,96 @@
       </nav>
     </header>
     
-    <div class="thumbnail">
-      <div id="DemoCarousel" class="carousel slide" data-interval="2000" data-ride="carousel">
-          
-          <ol class="carousel-indicators">
-              <li data-target="#DemoCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#DemoCarousel" data-slide-to="1"></li>
-              <li data-target="#DemoCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-              <div class="item active">
-                  <h2>Slide 1</h2>
-                  <div class="carousel-caption">
-                      <h3>This is the First Label</h3>
-                      <p>The Content of the First Slide goes in here</p>
-                  </div>
-              </div>
-              <div class="item">
-                  <h2>Slide 2</h2>
-                  <div class="carousel-caption">
-                      <h3>This is the Second Label</h3>
-                      <p>The Content of the second Slide goes in here</p>
-                  </div>
-              </div>
-              <div class="item">
-                  <h2>Slide 3</h2>
-                  <div class="carousel-caption">
-                      <h3>This is the Third Label</h3>
-                      <p>The Content of the Third Slide goes in here</p>
-                  </div>
-              </div>
+    <div class="carousel">
+      <div class="carousel-track">
+        <!-- Slide 1 -->
+        <div class="carousel-slide">
+          <img src="images/tyre-service.avif" alt="Service 1">
+          <div class="slide-caption">
+            <h2>Tyre repair and Replacement</h2>
+            <a href="#tyre-flexbox" class="carousel-button">Discover More</a>
           </div>
-          <a class="carousel-control left" href="#DemoCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="carousel-control right" href="#DemoCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <img src="images/drivechain-service.jpg" alt="Service 2">
+          <div class="slide-caption">
+            <h2>Drivetrain Repair and Maintainence</h2>
+            <a href="#chain-flexbox" class="carousel-button">Learn More</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <img src="images/bike-frame-service.jpg" alt="Service 3">
+          <div class="slide-caption">
+            <h2>Frame Repair and Replacement</h2>
+            <a href="#frame-flexbox" class="carousel-button">Book Now</a>
+          </div>
+        </div>
       </div>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- Left Section: Logo and Address -->
-      <div class="footer-left">
-        <h3>Bikes SG</h3>
-        <p>#01-57 Macpherson Road, 847379 Singapore</p>
-        <p>Contact: +65 9474 4859</p>
-        <p>Email: bikessg@email.com</p>
-      </div>
-  
-      <!-- Middle Section: Social Media -->
-      <div class="footer-middle">
-        <a href="https://www.instagram.com/fernwee.cc/?utm_source=ig_embed&ig_rid=2fbc3f9a-21a0-4a02-b39e-11ad3ca0a81a" target="_blank" class="social-icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-  
-      <!-- Right Section: Button -->
-      <div class="footer-right">
-        <button onclick="window.location.href='contact.html'" class="footer-button">Contact Us</button>
+      <button class="carousel-control prev">&#10094;</button>
+      <button class="carousel-control next">&#10095;</button>
+      <div class="carousel-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
       </div>
     </div>
-  </footer>
+
+    <div class="flexbox-container">
+      <!-- Flexbox 1 -->
+      <div id="tyre-flexbox" class="flexbox">
+        <div class="flexbox-content">
+          <h2>Tyre repair and replacement</h2>
+          <p>Comprehensive details about the first service, explaining what it involves and its benefits.</p>
+        </div>
+        <img src="images/service1-description.jpg" alt="Service 1 Illustration">
+      </div>
+    
+      <!-- Flexbox 2 -->
+      <div id="chain-flexbox" class="flexbox">
+        <div class="flexbox-content">
+          <h2>Service 2</h2>
+          <p>A detailed explanation of the second service and how it supports customers’ needs.</p>
+        </div>
+        <img src="images/service2-description.jpg" alt="Service 2 Illustration">
+      </div>
+    
+      <!-- Flexbox 3 -->
+      <div id="frame-flexbox" class="flexbox">
+        <div class="flexbox-content">
+          <h2>Service 3</h2>
+          <p>Insight into the third service, emphasizing its uniqueness and customer advantages.</p>
+        </div>
+        <img src="images/service3-description.jpg" alt="Service 3 Illustration">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section: Logo and Address -->
+        <div class="footer-left">
+          <h3>Bikes SG</h3>
+          <p>#01-57 Macpherson Road, 847379 Singapore</p>
+          <p>Contact: +65 9474 4859</p>
+          <p>Email: bikessg@email.com</p>
+        </div>
+    
+        <!-- Middle Section: Social Media -->
+        <div class="footer-middle">
+          <a href="https://www.instagram.com/fernwee.cc/?utm_source=ig_embed&ig_rid=2fbc3f9a-21a0-4a02-b39e-11ad3ca0a81a" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+    
+        <!-- Right Section: Button -->
+        <div class="footer-right">
+          <button onclick="window.location.href='contact.html'" class="footer-button">Contact Us</button>
+        </div>
+      </div>
+    </footer>
+
+  
     <!-- Script -->
     <script src="script.js"></script>
   </body>

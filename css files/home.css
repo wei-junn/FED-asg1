@@ -232,6 +232,105 @@
   height: 200px;
 }
 
+/* Services Overview Section */
+.services-overview {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.services-overview h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.services-overview h2 span {
+  color: #ffcc00; /* Highlight color */
+}
+
+.services-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service-box {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 350px;
+}
+
+.service-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.service-box h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.service-box p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.service-link {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.service-link:hover {
+  color: #0056b3;
+}
+
+.services-button {
+  margin-top: 2rem;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.main-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    flex: 1 1 100%;
+  }
+}
+
  /* General Footer Styling */
  .footer {
   background-color: #2c2c2c;
