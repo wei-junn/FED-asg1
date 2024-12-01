@@ -3,10 +3,16 @@ const cartModal = document.getElementById("cart-modal");
 const cartItemsContainer = document.getElementById("cart-items");
 const closeCartModal = document.getElementById("close-cart-modal");
 const cartIcon = document.getElementById("cart-icon");
-const cartCount = document.getElementById("cart-count"); // For modal count
+const cartCount = document.getElementById("cart-count");
 const clearCartButton = document.getElementById("clear-cart");
 const checkoutButton = document.getElementById("checkout-button");
 const cartButtons = document.querySelectorAll(".add-to-cart");
+
+// Select filter elements
+const categoryFilter = document.getElementById("category");
+const priceFilters = document.querySelectorAll(".price-filter");
+const resetFiltersButton = document.getElementById("reset-filters");
+const productCards = document.querySelectorAll(".product-card");
 
 // Initialize cart from localStorage or an empty array
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -104,6 +110,45 @@ closeCartModal.addEventListener("click", () => {
   cartModal.style.display = "none"; // Hide the modal
 });
 
+// Filter products by category and price
+function filterProducts() {
+  const selectedCategory = categoryFilter.value;
+
+  // Parse selected price filters
+  const selectedPriceRanges = Array.from(priceFilters)
+    .filter((checkbox) => checkbox.checked)
+    .map((checkbox) => {
+      const [min, max] = checkbox.value === "1000-above" ? [1000, Infinity] : checkbox.value.split("-").map(Number);
+      return { min, max };
+    });
+
+  productCards.forEach((card) => {
+    const productCategory = card.getAttribute("data-category");
+    const productPrice = parseInt(card.getAttribute("data-price"), 10);
+
+    const matchesCategory = selectedCategory === "all" || selectedCategory === productCategory;
+    const matchesPrice =
+      selectedPriceRanges.length === 0 ||
+      selectedPriceRanges.some((range) => productPrice >= range.min && productPrice <= range.max);
+
+    if (matchesCategory && matchesPrice) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+// Attach filter functionality
+categoryFilter.addEventListener("change", filterProducts);
+priceFilters.forEach((checkbox) => checkbox.addEventListener("change", filterProducts));
+resetFiltersButton.addEventListener("click", () => {
+  categoryFilter.value = "all";
+  priceFilters.forEach((checkbox) => (checkbox.checked = false));
+  filterProducts();
+});
+
 // Render cart items and update cart count on page load
 renderCartItems();
 updateCartCount();
+filterProducts();

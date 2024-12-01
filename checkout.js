@@ -6,7 +6,7 @@ const proceedCheckoutButton = document.getElementById("proceed-checkout");
 // Retrieve cart from localStorage or initialize an empty array
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Display cart items
+// Display cart items on the checkout page
 function renderCheckoutCartItems() {
   cartItemsContainer.innerHTML = ""; // Clear existing items
 
@@ -19,10 +19,12 @@ function renderCheckoutCartItems() {
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("cart-item");
     itemDiv.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-      <div>
-        <h3>${item.name}</h3>
-        <p>${item.price}</p>
+      <div class="cart-item-details">
+        <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+        <div class="cart-item-info">
+          <h3>${item.name}</h3>
+          <p>${item.price}</p>
+        </div>
       </div>
     `;
     cartItemsContainer.appendChild(itemDiv);
@@ -30,22 +32,22 @@ function renderCheckoutCartItems() {
 }
 
 // Clear the cart when the Clear Cart button is clicked
-clearCartButton.addEventListener("click", () => {
+clearCartButton?.addEventListener("click", () => {
   cart = []; // Empty the cart array
   localStorage.setItem("cart", JSON.stringify(cart)); // Update localStorage
-  renderCartItems(); // Re-render the cart display
+  renderCheckoutCartItems(); // Re-render the cart display
 });
 
 // Proceed to checkout
-proceedCheckoutButton.addEventListener("click", () => {
+proceedCheckoutButton?.addEventListener("click", () => {
   if (cart.length === 0) {
     alert("Your cart is empty!");
     return;
   }
 
   alert("Proceeding to checkout...");
-  // Add checkout functionality here (e.g., payment, order confirmation)
-  cart = []; // Clear cart
+  // Add additional checkout functionality here (e.g., payment, order confirmation)
+  cart = []; // Clear cart after checkout
   localStorage.setItem("cart", JSON.stringify(cart)); // Update localStorage
   renderCheckoutCartItems(); // Refresh checkout display
 });
