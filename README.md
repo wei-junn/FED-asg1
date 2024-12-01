@@ -62,38 +62,42 @@ easily and conveniently.
 Features
 - Navigation bar that changes colour on hover (completed)
 - Video in background on homepage (completed)
-- Outline the services provided
+- Outline the services provided (completed)
 - Include fictional track record and achievements 
 - Showcase pictures of clients/events/stores (completed)
 - Include pictures in a flexbox (completed)
 - Create a filter for the images in gallery (completed)
-- Provide information and contact information for customers.
+- Provide information and contact information for customers. (completed)
 - Error handling for form (completed)
 - Pop-up when users successfully submit form (completed)
 
 Existing Features
 - responsive navigation bar that has animation on hover
 - video in background on homepage
+- Outline the services provided
+- Include fictional track record and achievements 
 - Showcase pictures of clients/events/stores
 - Include pictures in a flexbox 
 - Create a filter for the images in gallery 
 - Error handling for form
 - Pop-up when users successfully submit form 
+- Provide information and contact information for customers.
+- Products page for bike accessories 
+- filter for products 
+- Add to cart function 
 
 Additional features to be implemented in the future:
-- Products page for bike accessories 
-- Add to cart function 
+- Products page for bike accessories (completed)
+- Add to cart function (completed)
 - Checkout page 
 
 
 Technologies Used
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-Figma (wireframe)
-JQuery
-The project uses JQuery to simplify DOM manipulation.
 
-Testing User-Stories:
--
+HTML, CSS, JS
+Figma (wireframe)
+
 
 Credits:
 video background - https://www.pexels.com/search/videos/cycling/
@@ -101,6 +105,7 @@ video background - https://www.pexels.com/search/videos/cycling/
 inspirations:
 navigation bar - https://www.bikesmith.sg/
 home page layout - https://www.bikeguru.sg/home-based-bicycle-shops-and-their-products-and-services/
+procucts and services pages - https://www.decathlon.sg/
 
 Images:
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cheekiemonkie.net%2F2019%2F11%2Feast-coast-park-cyclist-park-singapore.html&psig=AOvVaw3k0dNS8R_x1eTtWqq-h524&ust=1732196213620000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDxpvKD64kDFQAAAAAdAAAAABAZ
