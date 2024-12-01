@@ -144,8 +144,7 @@ body {
     color: #333;
 }
 
-main {
-    padding: 20px;
+main {   
     text-align: center;
 }
 
@@ -156,25 +155,46 @@ main h2 {
 
 /* Filters Section */
 .filters {
-  width: 100%;
-  margin: 50px auto;
-  padding: 20px;
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
   justify-content: center;
-  background-color: lightblue;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 100px;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: #fff;
-  border: none;
-  border-radius: 6px;
+.filters h2 {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-options label {
+  display: block;
+  background-color: white;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+.filter-options input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
 
 .gallery {
     display: grid;
@@ -216,6 +236,53 @@ button {
 
 .gallery-item:hover .caption {
     opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Single Column Layout */
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item {
+    width: 90%; /* Full width for mobile with some padding */
+  }
+
+  /* Adjust Heading */
+  .gallery-heading {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  /* Filters Fit Screen Width */
+  .gallery-filters {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .gallery-filters select {
+    width: 90%; /* Adjust to fit screen width */
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust Layout for Very Small Screens */
+  .gallery-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .gallery-filters select {
+    width: 95%; /* Slightly more padding for very small screens */
+  }
+
+  .gallery-item {
+    width: 95%; /* Slightly reduced width for very small screens */
+  }
 }
 
  /* General Footer Styling */
@@ -302,5 +369,49 @@ button {
   .footer-middle,
   .footer-right {
     margin-bottom: 10px;
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  /* Filters for Tablet Screens */
+  .filter-options {
+    flex-wrap: wrap;
+  }
+
+  .filter-options label {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Gallery for Tablet Screens */
+  .gallery-item {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Filters for Mobile Screens */
+  .filters {
+    padding: 0.5rem;
+  }
+
+  .filter-options label {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    width: 100%; /* Full width for each filter option */
+  }
+
+  .filter-options {
+    flex-direction: column; /* Stack filters vertically */
+  }
+
+  /* Gallery for Mobile Screens */
+  .gallery-item {
+    width: 100%; /* Single column for small screens */
+  }
+
+  .filters h2 {
+    font-size: 1rem;
   }
 }

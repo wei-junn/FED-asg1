@@ -448,6 +448,17 @@ header {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .cart-modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+  #checkout-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
 /* Modal Header */
 .cart-modal-content h2 {
   font-size: 1.8rem;

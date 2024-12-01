@@ -213,6 +213,22 @@ body {
   line-height: 1.8; /* Optional: improve readability */
 }
 
+@media (max-width: 768px) {
+  .our-story {
+    flex-direction: column; /* Stack image and text */
+    text-align: center; /* Center-align for mobile */
+  }
+
+  .our-story {
+    text-align: center; /* Center-align text */
+  }
+
+  .our-story img {
+    margin: 0 auto; /* Center the image */
+  }
+}
+
+
 /* Our Story 2 Section */
 .our-story-2 {
   display: flex;
@@ -367,10 +383,26 @@ body {
   line-height: 1.8; /* Optional: improve readability */
 }
 
+@media (max-width: 768px) {
+  .our-story-5 {
+    flex-direction: column; /* Stack image and text */
+    text-align: center; /* Center-align for mobile */
+  }
+
+  .our-story-5 {
+    text-align: center; /* Center-align text */
+  }
+
+  .our-story-5 img {
+    margin: 0 auto; /* Center the image */
+  }
+}
+
 /* Team Members Section */
 .team {
   text-align: center;
   padding: 4rem 2rem;
+  font-size: 2rem;
 }
 
 .team-container {
