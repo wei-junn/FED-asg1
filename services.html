@@ -33,7 +33,15 @@
             <a href="gallery.html">Gallery</a>
           </li>
           <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
             <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="checkout.html" id="cart-nav">
+              <i class="fas fa-shopping-cart"></i>              
+            </a>
           </li>
         </ul>
       </nav>
@@ -43,9 +51,9 @@
       <div class="carousel-track">
         <!-- Slide 1 -->
         <div class="carousel-slide">
-          <img src="images/tyre-service.avif" alt="Service 1">
+          <img src="images/tyre-service.jpg" alt="Service 1">
           <div class="slide-caption">
-            <h2>Tyre repair and Replacement</h2>
+            <h1>Tyre repair and Replacement</h1>
             <a href="#tyre-flexbox" class="carousel-button">Discover More</a>
           </div>
         </div>
@@ -53,7 +61,7 @@
         <div class="carousel-slide">
           <img src="images/drivechain-service.jpg" alt="Service 2">
           <div class="slide-caption">
-            <h2>Drivetrain Repair and Maintainence</h2>
+            <h1>Drivetrain Repair and Maintainence</h1>
             <a href="#chain-flexbox" class="carousel-button">Learn More</a>
           </div>
         </div>
@@ -61,7 +69,7 @@
         <div class="carousel-slide">
           <img src="images/bike-frame-service.jpg" alt="Service 3">
           <div class="slide-caption">
-            <h2>Frame Repair and Replacement</h2>
+            <h1>Frame Repair and Replacement</h1>
             <a href="#frame-flexbox" class="carousel-button">Book Now</a>
           </div>
         </div>
@@ -77,31 +85,83 @@
 
     <div class="flexbox-container">
       <!-- Flexbox 1 -->
-      <div id="tyre-flexbox" class="flexbox">
-        <div class="flexbox-content">
-          <h2>Tyre repair and replacement</h2>
-          <p>Comprehensive details about the first service, explaining what it involves and its benefits.</p>
+      <section id="tyre-flexbox" class="service-details">
+        <div class="service-image">
+          <img src="images/tyre-flex.avif" alt="Tyre Repair and Replacement">
         </div>
-        <img src="images/service1-description.jpg" alt="Service 1 Illustration">
-      </div>
+        <div class="service-details-container">
+          <h2>Tyre Repair & Replacement Service</h2>
+          <p>Experience safer, smoother rides with our professional tyre repair and replacement services. From patching punctures to fitting brand-new tyres, we ensure your bike performs at its best.</p>
+          <h3>What It Involves:</h3>
+          <ul>
+            <li><strong>Assessment:</strong> We inspect your tyres for wear, punctures, or sidewall damage and identify potential issues.</li>
+            <li><strong>Puncture Repair:</strong> High-quality patches and sealants are used to fix minor leaks and restore functionality.</li>
+            <li><strong>Tyre Replacement:</strong> When necessary, we replace worn-out tyres with durable, high-performance options tailored to your needs.</li>
+            <li><strong>Wheel Alignment:</strong> Rims are checked and adjusted for compatibility and balance.</li>
+            <li><strong>Pressure Optimization:</strong> Tyres are inflated to the ideal pressure for grip, efficiency, and durability.</li>
+          </ul>
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Enhanced ride safety with optimal traction and stability.</li>
+            <li>Improved performance and reduced rolling resistance.</li>
+            <li>Cost-effective maintenance, extending the life of your tyres.</li>
+            <li>Smoother, more comfortable rides on all terrains.</li>
+          </ul>
+          <a href="contact.html" class="main-button">Place your appointment today!</a>
+        </div>
+      </section>      
     
       <!-- Flexbox 2 -->
-      <div id="chain-flexbox" class="flexbox">
-        <div class="flexbox-content">
-          <h2>Service 2</h2>
-          <p>A detailed explanation of the second service and how it supports customers’ needs.</p>
+      <section id="chain-flexbox" class="service-details">
+        <div class="service-image">
+          <img src="images/chain-flex.jpg" alt="Drivetrain Repair and Maintenance">
         </div>
-        <img src="images/service2-description.jpg" alt="Service 2 Illustration">
-      </div>
+        <div class="service-details-container">
+          <h2>Drivetrain Repair & Maintenance</h2>
+          <p>Keep your bike’s drivetrain running smoothly with our professional repair and maintenance services. From chain replacements to gear adjustments, we’ve got you covered.</p>
+          <h3>What It Involves:</h3>
+          <ul>
+            <li><strong>Chain Cleaning:</strong> Removing dirt and debris to improve performance and reduce wear.</li>
+            <li><strong>Gear Adjustment:</strong> Ensuring smooth and precise gear shifting.</li>
+            <li><strong>Chain Replacement:</strong> Replacing worn-out chains with durable, high-quality options.</li>
+            <li><strong>Lubrication:</strong> Applying premium lubricants to enhance durability and efficiency.</li>
+          </ul>
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Improved pedaling efficiency and performance.</li>
+            <li>Extended lifespan of your drivetrain components.</li>
+            <li>Smoother and more reliable gear shifting.</li>
+            <li>Enhanced cycling experience across all terrains.</li>
+          </ul>
+          <a href="contact.html" class="main-button">Book Your Service Today!</a>
+        </div>
+      </section>
     
       <!-- Flexbox 3 -->
-      <div id="frame-flexbox" class="flexbox">
-        <div class="flexbox-content">
-          <h2>Service 3</h2>
-          <p>Insight into the third service, emphasizing its uniqueness and customer advantages.</p>
+      <section id="frame-flexbox" class="service-details">
+        <div class="service-image">
+          <img src="images/frame-flex.jpg" alt="Frame Repair and Painting">
         </div>
-        <img src="images/service3-description.jpg" alt="Service 3 Illustration">
-      </div>
+        <div class="service-details-container">
+          <h2>Frame Repair & Painting</h2>
+          <p>Revive your bike’s appearance and structural integrity with our frame repair and painting services. We ensure your bike is as durable as it is beautiful.</p>
+          <h3>What It Involves:</h3>
+          <ul>
+            <li><strong>Structural Inspection:</strong> Checking for cracks, dents, and weak points in the frame.</li>
+            <li><strong>Frame Repair:</strong> Reinforcing or repairing damaged areas to restore safety and functionality.</li>
+            <li><strong>Painting and Coating:</strong> Applying a fresh coat of durable, weather-resistant paint.</li>
+            <li><strong>Customization:</strong> Optional personalized designs or colors for a unique look.</li>
+          </ul>
+          <h3>Benefits:</h3>
+          <ul>
+            <li>Enhanced frame durability and safety.</li>
+            <li>A refreshed and professional appearance for your bike.</li>
+            <li>Protection against rust and environmental wear.</li>
+            <li>Increased bike longevity and resale value.</li>
+          </ul>
+          <a href="contact.html" class="main-button">Enhance Your Bike Today!</a>
+        </div>
+      </section>
     </div>
 
     <footer class="footer">
@@ -130,6 +190,6 @@
 
   
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="img-slider.js"></script>
   </body>
 </html>

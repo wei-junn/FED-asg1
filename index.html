@@ -33,11 +33,20 @@
             <a href="gallery.html">Gallery</a>
           </li>
           <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
             <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a href="checkout.html" id="cart-nav">
+              <i class="fas fa-shopping-cart"></i>              
+            </a>
           </li>
         </ul>
       </nav>
     </header>
+    
     <section id="home">
         <div class="vid-background">
           <div class="overlay"></div>
@@ -51,50 +60,141 @@
         </div>        
     </section>
 
+    <!-- Combined Customer Reviews and Key Metrics Section -->
+<section class="homepage-info">
+  <!-- Customer Reviews Section -->
+  <div class="customer-reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <img src="images/google-logo.png" alt="Google Logo">
+        <h3>Munirah Binte Zainol</h3>
+        <p class="review-date">3 days ago</p>
+        <p class="stars">★★★★★</p>
+        <p>Prompt and professional service. Great job.</p>
+      </div>
+      <div class="review-card">
+        <img src="images/google-logo.png" alt="Google Logo">
+        <h3>Zhen Zhen</h3>
+        <p class="review-date">5 days ago</p>
+        <p class="stars">★★★★★</p>
+        <p>Great service, reasonable price 👍👍.</p>
+      </div>
+      <div class="review-card">
+        <img src="images/google-logo.png" alt="Google Logo">
+        <h3>Michelle Anne Ng</h3>
+        <p class="review-date">6 days ago</p>
+        <p class="stars">★★★★★</p>
+        <p>Had to call for emergency, fast response and professional service.</p>
+      </div>
+      <div class="review-card">
+        <img src="images/google-logo.png" alt="Google Logo">
+        <h3>Tommy Lee</h3>
+        <p class="review-date">10 days ago</p>
+        <p class="stars">★★★★★</p>
+        <p>Excellent customer service and personalized bike services for everyone.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Metrics Section -->
+  <div class="metrics">
+    <div class="metrics-container">      
+      <div class="metric">
+        <h3>12k+</h3>
+        <p>Of bikes fixed</p>
+      </div>
+      <div class="metric">
+        <h3>1k+</h3>
+        <p>5-star reviews on Google</p>
+      </div>
+      <div class="metric">
+        <h3>2+</h3>
+        <p>Years of service in Singapore</p>
+      </div>
+      <div class="metric">
+        <h3>100%</h3>
+        <p>Coverage of Singapore</p>
+      </div>
+    </div>
+    <!-- Button to About Us -->
+    <div class="about-button">
+      <a href="about.html" class="main-button">Learn More About Us</a>
+    </div>
+  </div>
+</section>
+
+
     <section class="services-overview">
       <h2>Bicycle Servicing <span>Made Simple</span></h2>
       <div class="services-flex-container">
         <!-- Service 1 -->
-        <div class="service-box">
-          <div class="service-icon">
-            <img src="images/service-icon1.png" alt="Describe Your Problem">
-          </div>
-          <h3>Describe your problem</h3>
+        <div class="service-box">          
+          <h3>Tyre Services</h3>
           <p>
-            Explain to our team the issue you are facing with your bike(s) and
-            receive a quote instantly.
+            Repair or replace your tyres today with our top-of-the-line tyre services today! 
+            Facing problems with your wheel rims or tyre frames? Click the button below to find out more!
           </p>
-          <a href="services.html#describe-problem" class="service-link">Learn More</a>
+          <a href="services.html#tyre-flexbox" class="service-button">Learn More</a>
+
         </div>
     
         <!-- Service 2 -->
         <div class="service-box">
-          <div class="service-icon">
-            <img src="images/service-icon2.png" alt="Select a Time Slot">
-          </div>
-          <h3>Select a time slot</h3>
+          <h3>Drivetrain Services</h3>
           <p>
-            Once you validate the quote, let us know when our Bike Hero can come
-            down to your place for the service.
+            Facing issues with your bicycle chains or gears? 
+            With our expert drivechain repair services, your bike will be running smoothly yet again!
+            Click the button below to find out more!
           </p>
-          <a href="services.html#select-time-slot" class="service-link">Learn More</a>
+          <a href="services.html#chain-flexbox" class="service-button">Learn More</a>
         </div>
     
         <!-- Service 3 -->
         <div class="service-box">
-          <div class="service-icon">
-            <img src="images/service-icon3.png" alt="We Come to You">
-          </div>
-          <h3>We come to you</h3>
+          <h3>Frame Replacement</h3>
           <p>
-            Our Bike Heroes will come to your home or any location you prefer,
-            ensuring your bike is in top condition.
+            Want to replace or upgrade your bicycle frame? 
+            With our diverse range of bike frames, you can always rely on your bike for peak performance or reliable stability!
+            Click on the button below to find out more!
+          
           </p>
-          <a href="services.html#we-come-to-you" class="service-link">Learn More</a>
+          <a href="services.html#frame-flexbox" class="service-button">Learn More</a>
         </div>
       </div>
-      <div class="services-button">
-        <a href="services.html" class="main-button">Book Now</a>
+    </section>
+
+    <section class="image-slider">
+      <h2>Our Gallery</h2>
+      <div class="slider-container">
+        <button class="slider-control prev">&lt;</button>
+        <div class="slider-track">
+          <div class="slider-item">
+            <img src="images/cycle-for-hope.jpg" alt="Product One">            
+          </div>
+          <div class="slider-item">
+            <img src="images/business awards 2023.png" alt="Product Two">            
+          </div>
+          <div class="slider-item">
+            <img src="images/nat-champions.jpg" alt="Product Three">            
+          </div>
+          <div class="slider-item">
+            <img src="images/East Coast Cyclist Park.jpg" alt="Product Four">            
+          </div>
+          <div class="slider-item">
+            <img src="images/ocbc-team.jpg" alt="Product Four">            
+          </div>
+          <div class="slider-item">
+            <img src="images/TUDOR-RIDE.webp" alt="Product Four">            
+          </div>
+          <div class="slider-item">
+            <img src="images/Singapore-Business-Awards-Winners.png" alt="Product Four">      
+          </div>
+        </div>
+        <button class="slider-control next">&gt;</button>
+      </div>
+      <div class="gallery-button-container">
+        <a href="gallery.html" class="gallery-button">Visit Our Gallery</a>
       </div>
     </section>
     
@@ -123,6 +223,6 @@
     </footer>
         
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="home-slider.js"></script>
   </body>
 </html>

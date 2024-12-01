@@ -20,6 +20,27 @@
     z-index: 1000; /* High value to stay above other elements */
     padding: 3rem 5rem;
   }
+
+  #cart-nav {
+    position: relative;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  #cart-count-navbar {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   nav {
     display: flex;
@@ -174,64 +195,6 @@
     color: #fff;
   } 
   
- /* About Us Page */
- .banner {
-  position: relative;
-  width: 100%;
-  height: 55vh;
-  background: url(Images/banner-img.jpg) no-repeat center center/cover;
-}
-.banner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-.banner-text {
-  position: absolute;
-  top: 61%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 1;
-}
-.banner-text h1 {
-  font-size: 5.5rem;
-  font-weight: 600;
-}
-.banner-text p {
-  font-size: 1.8rem;
-  margin-top: 1rem;
-}
-/* Content Section */
-.content {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-.content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-  text-align: left;
-}
-.content p {
-  text-align: left;
-  max-width: 700px;
-  margin: 1 auto;
-  font-size: 1.5rem;
-  color: #666;
-}
-
-.founder {
-  position: relative;
-  width: 100px;
-  height: 200px;
-}
-
 /* Services Overview Section */
 .services-overview {
   text-align: center;
@@ -269,14 +232,8 @@
   max-width: 350px;
 }
 
-.service-icon img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem;
-}
-
 .service-box h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 1rem;
 }
@@ -287,36 +244,28 @@
   margin-bottom: 2rem;
 }
 
-.service-link {
+.service-button {
   display: inline-block;
-  font-size: 1.2rem;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  padding: 1rem 2rem; /* Spacing inside the button */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Text size */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  cursor: pointer; /* Show pointer cursor */
 }
 
-.service-link:hover {
-  color: #0056b3;
+.service-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift the button slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
+
 
 .services-button {
   margin-top: 2rem;
-}
-
-.main-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.main-button:hover {
-  background-color: #0056b3;
 }
 
 /* Responsive Design */
@@ -416,4 +365,198 @@
   .footer-right {
     margin-bottom: 10px;
   }
+}
+
+/* Combined Homepage Info Section */
+.homepage-info {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.homepage-info h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  margin-bottom: 3rem;
+}
+
+.reviews-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.review-card {
+  min-width: 250px;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img {
+  width: 20px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.review-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-card .review-date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.review-card .stars {
+  color: #f4b400; /* Gold color for stars */
+  font-size: 1.4rem;
+}
+
+/* Key Metrics Section */
+.metrics {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.metrics h2 {
+  font-size: 2.5rem; /* Make the header prominent */
+  font-weight: bold;
+  margin-bottom: 3rem; /* Add spacing below the header */
+  color: #222; /* Neutral dark color */
+}
+
+.metrics-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.metric h3 {
+  font-size: 3rem; /* Highlight the numbers */
+  color: #007bff; /* Primary color */
+}
+
+.metric p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.about-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.main-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Slider Section */
+.image-slider {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 50%; /* Make each image occupy 50% of the slider's width */
+  max-width: 50%; /* Prevent it from growing beyond 50% */
+  position: relative;
+  padding: 0.5rem; /* Add spacing between images */
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Slider Controls */
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-control.prev {
+  left: 1rem;
+}
+
+.slider-control.next {
+  right: 1rem;
+}
+
+.slider-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Gallery Button */
+.gallery-button-container {
+  margin-top: 2rem;
+}
+
+.gallery-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gallery-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
